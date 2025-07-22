@@ -48,8 +48,9 @@ TechNova/
 
 ## 🖥️ ¿Cómo probarlo?
 
-1. **Clona o descarga el repositorio.**
-2. Si deseas clonarlo(si no ignora este mensaje):
+1. **Visita la pagina Web** 👉: https://sebastianrdev.github.io/Ecommerce-TechNova/
+1. **O si quieres clona o descarga el repositorio**
+2. Si deseas clonarlo:
     ```bash
     git clone https://github.com/SebastianRdev/technova.git
 3. Abre `index.html` en tu navegador
@@ -80,11 +81,3 @@ Icons y fotos: Recursos libres de derechos
 - El formulario no envía información real, pero tiene validaciones HTML5.
 
 ---
-
-## 📷 Capturas de pantalla
-
-> [Screenshot de TechNova](assets/images/Screenshoot-inicial.png)
-
----
-
-¡Gracias por visitar **TechNova**!  
