@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <!-- Configuración básica y SEO -->
+
+    <meta charset="UTF-8">
+
+    <!-- Responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Descripción del sitio (máx. 160 caracteres) -->
+    <meta name="description" content="Explora los mejores productos de tecnología en TechNova. Laptops, componentes, accesorios y más al mejor precio">
+
+    <!-- Palabras clave (menos relevante hoy, pero aún útil en algunos contextos) -->
+    <meta name="keywords" content="tecnología, ecommerce, computadores, laptops, componentes, tienda online, TechNova">
+
+    <!-- Autor del sitio -->
+    <meta name="author" content="Sebastian Reyes">
+
+    <!-- Control de indexación (útil si quieres permitir o bloquear a motores de búsqueda) -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Tema del color del navegador en móviles -->
+    <meta name="theme-color" content="#1e1e1e">
+
+    <link rel="icon" href="../assets/icons/favicon.png" type="image/png">
+    <link rel="stylesheet" href="../styles/styles.css">
+
+    <title>Productos | TechNova</title>
+
+</head>
+<body>
+
+    <!-- Header: Navegación principal -->
+    <header>
+
+        <nav aria-label="Navegación principal">
+            <a href="../index.html" id="logo" aria-label="Ir al inicio de TechNova">
+                <img src="../assets/icons/logo-ecommerce.webp" alt="Logo E-commerce" id="logo-imagen">
+                <h2 id="nombre-marca">TechNova</h2>
+            </a>
+
+            <div class="barra-buscar">
+                <label for="buscar" class="sr-only">Buscar productos</label>
+                <input type="text" id="buscar" name="barra-busqueda" placeholder="¿Que producto quieres buscar?">
+            </div>
+
+            <ul class="nav-enlaces">
+                <li><a href="#">Productos</a></li>
+                <li><a href="soporte.html">Soporte</a></li>
+            </ul>
+            
+            <a href="#" id="btn-carrito" aria-label="Ver carrito de compras">
+                <img src="../assets/icons/carrito-de-compras.webp" alt="Carrito de compras">
+                <span class="carrito-contador">0</span>
+            </a>
+
+        </nav>
+
+    </header>
+
+    <!-- Main: Catálogo y filtros -->
+    <main>
+
+        <h1 id="productos-h1">Productos disponibles</h1>
+
+        <div id="contenedor-main-productos">
+
+             <!-- Filtros laterales para el catálogo -->
+            <input type="checkbox" id="toggle-filtros" class="toggle-filtros">
+            <label for="toggle-filtros" class="btn-filtros"><img src="../assets/icons/filtrar.webp" alt="Icon de filtrar" id="icon-filtrar"></label>
+            <aside class="filtros">
+                
+                <details>
+                    <summary>Marca</summary>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>Generico</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>Lenovo</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>HP</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>CompuMax</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>Apple</span>
+                            </label>
+                        </li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>Memoria RAM</summary>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>4 GB</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>8 GB</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>16 GB</span>
+                            </label>
+                        </li>
+                    </ul>
+                </details>
+
+                <details class="filtro-precio">
+                    <summary>Rango de precio</summary>
+                        <div class="contenido-filtro">
+
+                            <label for="precio-min">Desde: $600.000</label>
+
+                            <input type="range" id="precio-min" min="60000" max="1000000" step="1000" value="600000">
+
+                            <label for="precio-max">Hasta: $10.000.000</label>
+
+                            <input type="range" id="precio-max" min="600000" max="1000000" step="1000" value="60000">
+
+                        </div>
+                    </details>
+
+            </aside>
+
+            <!-- Sección donde se renderizan los productos con JS -->
+            <section id="productos">
+                <div class="grid-productos" id="contenedor-productos">
+                    <!-- Los productos aparecen aquí mediante script.js -->
+                </div>
+            </section> 
+        </div>
+
+    </main>
+
+    <!-- Footer: Información legal, contacto y redes sociales -->
+    <footer>
+        <div class="contenedor-footer">
+
+            <!-- Bloque de contacto y redes -->
+            <div class="footer-contacto">
+
+                <div class="soporte">
+                    <img src="../assets/icons/soporte.webp" alt="Icono de soporte">
+                    <p class="p-atencion">
+                        ¿Ayuda?, envia un ticket al
+                    </p>
+
+                    <p class="centro">
+                        Centro de soporte
+                    </p>
+                </div>
+
+                <p class="centro horario">
+                    Horario de atencion continua
+                </p>
+
+                <p class="p-atencion" id="horas">
+                    L a V 9AM-6:30 PM, S 9AM-5PM
+                </p>
+
+                <!-- Redes sociales -->
+                <ul id="redes-sociales">
+                    <li> <a href="#" id="facebook" class="iconos-redes"><img src="../assets/icons/facebook_negro.webp" alt="Icono de Facebook"></a> </li>
+                    <li> <a href="#" id="instagram" class="iconos-redes"><img src="../assets/icons/instagram_negro.webp" alt="Icono de Instagram"></a> </li>
+                    <li> <a href="#" id="whatsapp" class="iconos-redes"><img src="../assets/icons/whatsapp_negro.webp" alt="Icono de Whatsapp"></a> </li>
+                    <li> <a href="#" id="x" class="iconos-redes"><img src="../assets/icons/x.webp" alt="Icono de X"></a> </li>
+                    <li> <a href="#" id="tik-tok" class="iconos-redes"><img src="../assets/icons/tik-tok_negro.webp" alt="Icono de TikTok"></a> </li>
+                    <li> <a href="#" id="youtube" class="iconos-redes"><img src="../assets/icons/youtube_negro.webp" alt="Icono de Youtube"></a> </li>
+                </ul>
+
+            </div>
+
+            <!-- Bloque de información de la empresa -->
+            <div class="footer-info">
+
+                <div class="footer-nosotros">
+
+                    <h4>Nosotros</h4>
+                    <ul>
+                        <li><a href="#">TechNova App Android</a></li>
+                        <li><a href="#">TechNova App iOS</a></li>
+                        <li><a href="#">TechNova Podcast</a></li>
+                        <li><a href="#">Terminos y Condiciones</a></li>
+                        <li><a href="#">Politica de privacidad</a></li>
+                    </ul>
+                    
+                </div>
+
+                <div class="footer-empresa">
+
+                    <h4>Acerca de TechNova</h4>
+                    <ul>
+                        <li><a href="#">Portal de carrera</a></li>
+                        <li><a href="#">¿Quienes somos?</a></li>
+                        <li><a href="#">Relacion con inversionistas</a></li>
+                        <li><a href="#">Sostenibilidad</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div id="copyright">
+            <p>&copy; Copyright 2025 TechNova</p>
+        </div>
+
+    </footer>
+
+    <!-- Script para renderizar productos dinámicamente -->
+    <script src="../scripts/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <!-- Configuración básica y SEO -->
+
+    <meta charset="UTF-8">
+
+    <!-- Responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Descripción del sitio (máx. 160 caracteres) -->
+    <meta name="description" content="TechNova: Tu tienda online de tecnología con descuentos, envíos seguros y asesoramiento experto">
+
+    <!-- Palabras clave (menos relevante hoy, pero aún útil en algunos contextos) -->
+    <meta name="keywords" content="tecnología, ecommerce, computadores, laptops, componentes, tienda online, TechNova">
+
+    <!-- Autor del sitio -->
+    <meta name="author" content="Sebastian Reyes">
+
+    <!-- Control de indexación (útil si quieres permitir o bloquear a motores de búsqueda) -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Tema del color del navegador en móviles -->
+    <meta name="theme-color" content="#1e1e1e">
+
+    <link rel="icon" href="assets/icons/favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <title>TechNova</title>
+
+</head>
+
+<body>
+
+    <!-- Header: Navegación principal -->
+    <header>
+
+        <!-- Navegacion -->
+        <nav aria-label="Navegación principal">
+            <!-- Logo y nombre de marca -->
+            <a href="#" id="logo" aria-label="Ir al inicio de TechNova">
+                <img src="assets/icons/logo-ecommerce.webp" alt="Logo E-commerce" id="logo-imagen">
+                <h2 id="nombre-marca">TechNova</h2>
+            </a>
+
+            <!-- Barra de búsqueda -->
+            <div class="barra-buscar">
+                <label for="buscar" class="sr-only">Buscar productos</label>
+                <input type="text" id="buscar" name="barra-busqueda" placeholder="¿Que producto quieres buscar?">
+            </div>
+
+            <!-- Enlaces de navegación internos -->
+            <ul class="nav-enlaces">
+                <li><a href="pages/productos.html">Productos</a></li>
+                <li><a href="pages/soporte.html">Soporte</a></li>
+            </ul>
+            
+            <!-- Botón de carrito de compras con contador -->
+            <a href="#" id="btn-carrito" aria-label="Ver carrito de compras">
+                <img src="assets/icons/carrito-de-compras.webp" alt="Carrito de compras">
+                <span class="carrito-contador">0</span>
+            </a>
+
+        </nav>
+
+    </header>
+
+    <!-- Main: Contenido principal de la página -->
+    <main>
+
+        <!-- Banner inicial con imagen y promoción -->
+        <section id="banner-inicial">
+
+            <div class="banner-principal">
+                <img src="assets/imagenes/Imagen_Fondo.webp" alt="Imagen de fondo" id="imagen-inicial">
+                <img src="assets/imagenes/Tech-boom.png" alt="Promocion" id="promocion">
+            </div>
+
+        </section>
+
+        <!-- Sección de promociones de octubre -->
+        <section id="productos-1" aria-label="Promociones de octubre">
+
+            <h2>Compra hoy y paga hasta octubre</h2>
+            <div class="grid-productos-contenedor">
+
+                <!-- Tarjetas de productos promocionales -->
+                <article class="item item-1">
+                    <img src="assets/imagenes/Item_1.webp" alt="Promoción de portatiles con descuento">
+                </article>
+
+                <article class="item item-2">
+                    <img src="assets/imagenes/Item_2.webp" alt="Promoción de portatiles con descuento">
+                </article>
+
+                <article class="item item-3">
+                    <img src="assets/imagenes/Item_3.webp" alt="Promoción de portatiles con descuento">
+                    <img src="assets/imagenes/Tech-boom-50.png" alt="Promocion flotante" id="promocion-flotante">
+                </article>
+
+                <article class="item item-4">
+                    <img src="assets/imagenes/Item_4.webp" alt="Promoción de portatiles con descuento">
+                </article>
+
+                <article class="item item-5">
+                    <img src="assets/imagenes/Item_5.webp" alt="Promoción de portatiles con descuento">
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Seccion productos con descuento -->
+        <section id="productos-2" aria-label="Descuentos en computadores">
+
+            <h2>Hasta 20% de descuento en computadores</h2>
+
+            <div class="grid-productos-contenedor2">
+
+                <!-- Catálogo de productos destacados -->
+                <a href="#">
+                    <article class="items item-1">
+                        <img src="assets/imagenes/computador1.webp" alt="HP Victus 16">
+                        <h3>HP Victus 16</h3>
+                        <p>
+                            <span class="precio-antiguo">COP $2 803 228.9</span> 
+                            <span class="precio-actual">COP $1 001 127.45</span>
+                        </p>
+                    </article>
+                </a>
+                
+
+                <a href="#">
+                    <article class="items item-2">
+                        <img src="assets/imagenes/computador2.webp" alt="Laptop Acer Aspire 5">
+                        <h3>Laptop Acer Aspire 5</h3>
+                        <p>
+                            <span class="precio-antiguo">COP $2 803 228.9</span> 
+                            <span class="precio-actual">COP $1 001 127.45</span>
+                        </p>
+                    </article>
+                </a>
+
+                <a href="#">
+                    <article class="items item-3">
+                        <img src="assets/imagenes/computador3.webp" alt="Asus VivoBook S14">
+                        <h3>Asus VivoBook S14</h3>
+                        <p>
+                            <span class="precio-antiguo">COP $2 803 228.9</span> 
+                            <span class="precio-actual">COP $1 001 127.45</span>
+                        </p>
+                    </article>
+                </a>
+
+                <a href="#">
+                    <article class="items item-4">
+                        <img src="assets/imagenes/computador4.webp" alt="HP Modern 14">
+                        <h3>HP Modern 14</h3>
+                        <p>
+                            <span class="precio-antiguo">COP $2 803 228.9</span> 
+                            <span class="precio-actual">COP $1 001 127.45</span>
+                        </p>
+                    </article>
+                </a>
+
+                <a href="#">
+                    <article class="items item-5">
+                        <img src="assets/imagenes/computador5.webp" alt="HP Pavilion 14 Ryzen 5">
+                        <h3>HP Pavilion 14 Ryzen 5</h3>
+                        <p>
+                            <span class="precio-antiguo">COP $2 803 228.9</span> 
+                            <span class="precio-actual">COP $1 001 127.45</span>
+                        </p>
+                    </article>
+                </a>
+
+                <a href="#">
+                    <article class="items item-6">
+                        <img src="assets/imagenes/computador6.webp" alt="Dell XPS 13">
+                        <h3>Dell XPS 13</h3>
+                        <p>
+                            <span class="precio-antiguo">COP $2 803 228.9</span> 
+                            <span class="precio-actual">COP $1 001 127.45</span>
+                        </p>
+                    </article>
+                </a>
+
+                <a href="#">
+                    <article class="items item-7">
+                        <img src="assets/imagenes/computador7.webp" alt="MacBook Pro M2">
+                        <h3>MacBook Pro M2</h3>
+                        <p>
+                            <span class="precio-antiguo">COP $2 803 228.9</span> 
+                            <span class="precio-actual">COP $1 001 127.45</span>
+                        </p>
+                    </article>
+                </a>
+
+                <a href="#">
+                    <article class="items item-8">
+                        <img src="assets/imagenes/computador8.webp" alt="Lenovo Yoga Slim 7">
+                        <h3>Lenovo Yoga Slim 7</h3>
+                        <p>
+                            <span class="precio-antiguo">COP $2 803 228.9</span> 
+                            <span class="precio-actual">COP $1 001 127.45</span>
+                        </p>
+                    </article>
+                </a>
+
+                <a href="#">
+                    <article class="items item-9">
+                        <img src="assets/imagenes/computador9.webp" alt="Acer Swift 3">
+                        <h3>Acer Swift 3</h3>
+                        <p>
+                            <span class="precio-antiguo">COP $2 803 228.9</span> 
+                            <span class="precio-actual">COP $1 001 127.45</span>
+                        </p>
+                    </article>
+                </a>
+
+                <a href="#">
+                    <article class="items item-10">
+                        <img src="assets/imagenes/computador10.webp" alt="Asus ROG Zephyrus G14">
+                        <h3>Asus ROG Zephyrus G14</h3>
+                        <p>
+                            <span class="precio-antiguo">COP $2 803 228.9</span> 
+                            <span class="precio-actual">COP $1 001 127.45</span>
+                        </p>
+                    </article>
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- Seccion especialidades de la tienda -->
+        <section id="especialidades" aria-label="Especialidades de TechNova">
+
+            <div class="contenedor-especialidades">
+
+                <h3>NUESTRAS ESPECIALIDADES</h3>
+
+                <div class="contenedor-icon-especialidades">
+
+                    <!-- Tarjetas de especialidad -->
+                    <article class="icon-especialidades">
+
+                        <div class="circulo-icono">
+                            <img src="assets/icons/ampliar.webp" alt="Icono de ampliar">
+                        </div>
+
+                        <h4>Asesoramiento personalizado</h4>
+                        <p>
+                            Ofrecemos asesoramiento experto para ayudarte a encontrar los componentes tecnológicos que mejor se adapten a tus necesidades.
+                        </p>
+
+                    </article>
+
+                    <article class="icon-especialidades">
+
+                        <div class="circulo-icono">
+                            <img src="assets/icons/soporte-personalizado.webp" alt="Icono de soporte">
+                        </div>
+        
+                        <h4>Amplio Catálogo de Productos</h4>
+                        <p>
+                            Contamos con una amplia variedad de componentes tecnológicos de las mejores marcas del mercado.
+                        </p>
+
+                    </article>
+
+                    <article class="icon-especialidades">
+
+                        <div class="circulo-icono">
+                            <img src="assets/icons/escudo-seguro.webp" alt="Icono de seguridad">
+                        </div>
+                        
+                        <h4>Envíos Rapidos y Seguros</h4>
+                        <p>
+                            Garantizamos envíos rápidos y seguros para que recibas tus productos en perfecto estado y en el menor tiempo posible.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Sección de compra especial de componentes -->
+        <div class="contenedor-comprar">
+
+            <div id="componentes">
+
+                <h3>Componentes y precios únicos</h3>
+                <p>Explora millones de componentes para tu PC</p>
+                <input type="button" value="Comprar ahora" id="boton-comprar">
+
+            </div>
+            
+            <div class="contenedor-imagen-promocional">
+
+                <div class="imagen-promocional">
+                    <img src="assets/imagenes/tresimagenes.webp" width="400" alt="imagen-especialidades">
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer: Información legal, contacto y redes sociales -->
+    <footer>
+        <div class="contenedor-footer">
+
+            <!-- Bloque de contacto y redes -->
+            <div class="footer-contacto">
+
+                <div class="soporte">
+                    <img src="assets/icons/soporte.webp" alt="Icono de soporte">
+                    <p class="p-atencion">
+                        ¿Ayuda?, envia un ticket al
+                    </p>
+
+                    <p class="centro">
+                        Centro de soporte
+                    </p>
+                </div>
+
+                <p class="centro horario">
+                    Horario de atencion continua
+                </p>
+
+                <p class="p-atencion" id="horas">
+                    L a V 9AM-6:30 PM, S 9AM-5PM
+                </p>
+
+                <!-- Redes sociales -->
+                <ul id="redes-sociales">
+                    <li> <a href="#" id="facebook" class="iconos-redes"><img src="assets/icons/facebook_negro.webp" alt="Icono de Facebook"></a> </li>
+                    <li> <a href="#" id="instagram" class="iconos-redes"><img src="assets/icons/instagram_negro.webp" alt="Icono de Instagram"></a> </li>
+                    <li> <a href="#" id="whatsapp" class="iconos-redes"><img src="assets/icons/whatsapp_negro.webp" alt="Icono de Whatsapp"></a> </li>
+                    <li> <a href="#" id="x" class="iconos-redes"><img src="assets/icons/x.webp" alt="Icono de X"></a> </li>
+                    <li> <a href="#" id="tik-tok" class="iconos-redes"><img src="assets/icons/tik-tok_negro.webp" alt="Icono de TikTok"></a> </li>
+                    <li> <a href="#" id="youtube" class="iconos-redes"><img src="assets/icons/youtube_negro.webp" alt="Icono de Youtube"></a> </li>
+                </ul>
+
+            </div>
+
+            <!-- Bloque de información de la empresa -->
+            <div class="footer-info">
+
+                <div class="footer-nosotros">
+
+                    <h4>Nosotros</h4>
+                    <ul>
+                        <li><a href="#">TechNova App Android</a></li>
+                        <li><a href="#">TechNova App iOS</a></li>
+                        <li><a href="#">TechNova Podcast</a></li>
+                        <li><a href="#">Terminos y Condiciones</a></li>
+                        <li><a href="#">Politica de privacidad</a></li>
+                    </ul>
+                    
+                </div>
+
+                <div class="footer-empresa">
+
+                    <h4>Acerca de TechNova</h4>
+                    <ul>
+                        <li><a href="#">Portal de carrera</a></li>
+                        <li><a href="#">¿Quienes somos?</a></li>
+                        <li><a href="#">Relacion con inversionistas</a></li>
+                        <li><a href="#">Sostenibilidad</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div id="copyright">
+            <p>&copy; Copyright 2025 TechNova</p>
+        </div>
+
+    </footer>
+</body>
+</html>
